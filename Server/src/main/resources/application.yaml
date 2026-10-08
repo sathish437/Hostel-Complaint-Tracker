@@ -1,0 +1,36 @@
+spring:
+  application:
+    name: Hostel-Compliant-Tracker
+
+  datasource:
+    url: ${DATABASE_URL}
+    username: ${DATABASE_USERNAME}
+    password: ${DATABASE_PASSWORD}
+    driver-class-name: org.postgresql.Driver
+
+  jpa:
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+    open-in-view: false
+    properties:
+      hibernate:
+        format_sql: true
+
+springdoc:
+  api-docs:
+    path: /v3/api-docs
+    enabled: true
+  swagger-ui:
+    path: /swagger-ui/index.html
+    enabled: true
+    operations-sorter: method
+    tags-sorter: alpha
+
+sla:
+  scheduler:
+    enabled: true
+    fixed-delay-ms: 60000
+    initial-delay-ms: 10000
+

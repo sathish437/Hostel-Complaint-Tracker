@@ -1,0 +1,141 @@
+{
+  "categories": [
+    {
+      "id": "ELECTRICAL",
+      "name": "Electrical",
+      "responsible_role": "ELECTRICIAN",
+      "complaints": [
+        "Fan not working",
+        "Fan slow",
+        "Light not working",
+        "Tube light fused",
+        "Switch not working",
+        "Socket/plug not working",
+        "Switchboard damaged",
+        "Short circuit",
+        "Power trip",
+        "Corridor light not working",
+        "Bathroom light not working",
+        "Exhaust fan not working",
+        "Water heater/geyser problem",
+        "Exposed/damaged electrical wiring"
+      ]
+    },
+    {
+      "id": "WATER_PLUMBING",
+      "name": "Water / Plumbing",
+      "responsible_role": "HOSTEL_OFFICE",
+      "complaints": [
+        "No water",
+        "Low water pressure",
+        "Tap not working",
+        "Tap leaking",
+        "Pipe leakage",
+        "Bathroom water leakage",
+        "Washbasin blocked",
+        "Drain blocked",
+        "Toilet flush not working",
+        "Toilet/commode damaged",
+        "Shower not working",
+        "Water heater not working",
+        "Drinking-water problem",
+        "Water purifier/filter not working"
+      ]
+    },
+    {
+      "id": "CLEANING_HYGIENE",
+      "name": "Cleaning / Hygiene",
+      "responsible_role": "CLEANING_WORKER",
+      "complaints": [
+        "Room not cleaned",
+        "Bathroom not cleaned",
+        "Toilet dirty",
+        "Garbage not collected",
+        "Bad smell",
+        "Mosquito problem",
+        "Cockroach problem",
+        "Rats",
+        "Insects/pests",
+        "Dirty drinking-water area",
+        "Drainage smell"
+      ]
+    },
+    {
+      "id": "ROOM_FURNITURE",
+      "name": "Room / Furniture",
+      "responsible_role": "HOSTEL_OFFICE",
+      "complaints": [
+        "Bed broken",
+        "Chair broken",
+        "Table damaged",
+        "Cupboard damaged",
+        "Cupboard lock missing",
+        "Door lock problem",
+        "Door damaged",
+        "Window damaged",
+        "Mattress damaged",
+        "Room overcrowded",
+        "Room allocation issue"
+      ]
+    },
+    {
+      "id": "INTERNET_WIFI",
+      "name": "Internet / Wi-Fi",
+      "responsible_role": "HOSTEL_OFFICE",
+      "complaints": [
+        "Wi-Fi not working",
+        "No Wi-Fi",
+        "Weak signal",
+        "Internet very slow",
+        "Wi-Fi disconnected",
+        "No network in particular rooms"
+      ]
+    },
+    {
+      "id": "FOOD_MESS",
+      "name": "Mess / Food",
+      "responsible_role": "MASTER",
+      "complaints": [
+        "Food quality poor",
+        "Food quantity insufficient",
+        "Food served cold",
+        "Food hygiene problem",
+        "Insects in food",
+        "Menu not followed",
+        "Food served late",
+        "Drinking water at mess not good",
+        "Mess cleanliness problem"
+      ]
+    },
+    {
+      "id": "SECURITY",
+      "name": "Security",
+      "responsible_role": "WATCHMAN",
+      "complaints": [
+        "Unknown person entering hostel",
+        "Lost key",
+        "Broken door lock",
+        "CCTV not working",
+        "Security concern",
+        "Visitor-related issue",
+        "Suspicious activity",
+        "Emergency/security incident"
+      ]
+    },
+    {
+      "id": "DISCIPLINE_HOSTEL_ENVIRONMENT",
+      "name": "Discipline / Hostel Environment",
+      "responsible_role": "HOSTEL_OFFICE",
+      "complaints": [
+        "Excessive room noise",
+        "Loud music",
+        "Disturbance at night",
+        "Fighting",
+        "Unauthorized visitors",
+        "Smoking",
+        "Alcohol/drug-related complaint",
+        "Curfew violation"
+      ]
+    }
+  ]
+}
