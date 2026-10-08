@@ -85,6 +85,38 @@ public class Complaint {
     @Column(name = "closed_at")
     private Instant closedAt;
 
+    @Column(name = "title")
+    private String title;
+
+    @Column(name = "evidence_url", length = 1000)
+    private String evidenceUrl;
+
+    @Column(name = "completion_proof_url", length = 1000)
+    private String completionProofUrl;
+
+    @Column(name = "staff_notes", columnDefinition = "TEXT")
+    private String staffNotes;
+
+    @Column(name = "reopen_reason", columnDefinition = "TEXT")
+    private String reopenReason;
+
+    @Builder.Default
+    @Column(name = "is_escalated", nullable = false)
+    private Boolean isEscalated = false;
+
+    @Column(name = "escalation_level")
+    private String escalationLevel;
+
+    @Column(name = "escalation_reason", columnDefinition = "TEXT")
+    private String escalationReason;
+
+    @Column(name = "escalated_at")
+    private Instant escalatedAt;
+
+    @Builder.Default
+    @Column(name = "is_repeated_issue")
+    private Boolean isRepeatedIssue = false;
+
     @PrePersist
     protected void onCreate() {
         Instant now = Instant.now();

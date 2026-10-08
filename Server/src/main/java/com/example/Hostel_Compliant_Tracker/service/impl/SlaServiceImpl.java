@@ -174,7 +174,7 @@ public class SlaServiceImpl implements SlaService {
         }
 
         return switch (priority) {
-            case CRITICAL -> 1;
+            case CRITICAL, EMERGENCY -> 1;
             case HIGH -> 4;
             case MEDIUM -> 24;
             case LOW -> 48;

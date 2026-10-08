@@ -87,7 +87,7 @@ public class AssignmentServiceImpl implements AssignmentService {
         }
         return switch (category) {
             case ELECTRICAL -> UserRole.ELECTRICIAN;
-            case WATER_PLUMBING, ROOM_FURNITURE, INTERNET_WIFI, DISCIPLINE_HOSTEL_ENVIRONMENT, OTHER -> UserRole.HOSTEL_OFFICE;
+            case WATER_PLUMBING, ROOM_FURNITURE, INTERNET_WIFI, INTERNET, GENERAL, DISCIPLINE_HOSTEL_ENVIRONMENT, OTHER -> UserRole.HOSTEL_OFFICE;
             case CLEANING_HYGIENE -> UserRole.CLEANING_WORKER;
             case FOOD_MESS -> UserRole.MASTER;
             case SECURITY -> UserRole.WATCHMAN;

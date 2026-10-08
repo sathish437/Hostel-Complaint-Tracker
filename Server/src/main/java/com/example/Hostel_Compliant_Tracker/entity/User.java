@@ -46,6 +46,21 @@ public class User {
     @Column(name = "active", nullable = false)
     private Boolean active = true;
 
+    @Column(name = "room_number")
+    private String roomNumber;
+
+    @Column(name = "block")
+    private String block;
+
+    @Column(name = "student_id")
+    private String studentId;
+
+    @Column(name = "avatar_url", length = 1000)
+    private String avatarUrl;
+
+    @Column(name = "username")
+    private String username;
+
     @Column(name = "created_at", nullable = false, updatable = false)
     private Instant createdAt;
 

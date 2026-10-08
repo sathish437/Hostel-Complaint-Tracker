@@ -6,6 +6,7 @@ public enum ComplaintStatus {
     ACKNOWLEDGED,
     IN_PROGRESS,
     RESOLUTION_PENDING,
+    RESOLVED,
     STUDENT_CONFIRMED,
     CLOSED,
     SLA_BREACHED,

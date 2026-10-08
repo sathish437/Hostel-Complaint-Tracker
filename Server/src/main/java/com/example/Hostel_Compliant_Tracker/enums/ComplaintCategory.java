@@ -9,5 +9,7 @@ public enum ComplaintCategory {
     FOOD_MESS,
     SECURITY,
     DISCIPLINE_HOSTEL_ENVIRONMENT,
-    OTHER
+    OTHER,
+    INTERNET,
+    GENERAL
 }

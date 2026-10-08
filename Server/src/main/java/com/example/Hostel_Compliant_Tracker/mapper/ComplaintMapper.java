@@ -40,7 +40,7 @@ public class ComplaintMapper {
             case WATER_PLUMBING -> "plumbing";
             case CLEANING_HYGIENE -> "cleaning";
             case ROOM_FURNITURE, INTERNET_WIFI, FOOD_MESS, SECURITY,
-                 DISCIPLINE_HOSTEL_ENVIRONMENT, OTHER -> "other";
+                 DISCIPLINE_HOSTEL_ENVIRONMENT, OTHER, INTERNET, GENERAL -> "other";
         };
     }
 
@@ -64,7 +64,7 @@ public class ComplaintMapper {
         return switch (internalPriority) {
             case LOW -> "low";
             case MEDIUM -> "normal";
-            case HIGH, CRITICAL -> "high";
+            case HIGH, CRITICAL, EMERGENCY -> "high";
         };
     }
 
@@ -88,7 +88,7 @@ public class ComplaintMapper {
             case SUBMITTED, ASSIGNED, ACKNOWLEDGED, REOPENED -> "open";
             case IN_PROGRESS, RESOLUTION_PENDING -> "in_progress";
             case SLA_BREACHED, ESCALATED -> "escalated";
-            case STUDENT_CONFIRMED, CLOSED -> "closed";
+            case RESOLVED, STUDENT_CONFIRMED, CLOSED -> "closed";
         };
     }
 
