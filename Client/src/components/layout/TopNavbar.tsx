@@ -39,9 +39,10 @@ export const TopNavbar: React.FC<TopNavbarProps> = ({
   const getPageTitle = () => {
     if (location.pathname === '/audit-logs') return 'Audit Trail Ledger';
     if (location.pathname === '/analytics') return 'SLA Performance & Telemetry';
-    if (location.pathname === '/student/complaints') return 'Problem Status';
+    if (location.pathname.startsWith('/student/complaints/')) return 'Complaint Tracking';
+    if (location.pathname === '/student/complaints') return 'My Complaints';
     if (location.pathname === '/student/profile') return 'Resident Profile';
-    if (location.pathname === '/student/dashboard' || currentUser?.role === 'STUDENT') return 'Problem Status';
+    if (location.pathname === '/student/dashboard') return 'My Complaints';
     if (!currentUser) return 'Hostel Complaint Hub';
     return `${currentUser.role.replace('_', ' ')} Dashboard`;
   };

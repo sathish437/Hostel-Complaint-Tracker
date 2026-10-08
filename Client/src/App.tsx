@@ -13,6 +13,7 @@ import { ProtectedRoute, getRoleDashboardPath } from './components/auth/Protecte
 import { LoginPage } from './pages/LoginPage';
 import { StudentDashboard } from './pages/StudentDashboard';
 import { StudentComplaintsPage } from './pages/StudentComplaintsPage';
+import { StudentComplaintDetailPage } from './pages/StudentComplaintDetailPage';
 import { StudentProfilePage } from './pages/StudentProfilePage';
 import { HostelOfficeDashboard } from './pages/HostelOfficeDashboard';
 import { StaffDashboard } from './pages/StaffDashboard';
@@ -142,28 +143,26 @@ export const AppContent: React.FC = () => {
         {/* 1. Student Routes */}
         <Route
           path="/student/dashboard"
-          element={
-            <ProtectedRoute allowedRoles={['STUDENT']}>
-              <AuthenticatedShell>
-                <StudentDashboard
-                  complaints={complaints}
-                  onOpenNewModal={() => setIsNewModalOpen(true)}
-                  onSelectComplaint={setSelectedComplaint}
-                />
-              </AuthenticatedShell>
-            </ProtectedRoute>
-          }
+          element={<Navigate to="/student/complaints" replace />}
         />
         <Route
           path="/student/complaints"
           element={
             <ProtectedRoute allowedRoles={['STUDENT']}>
               <AuthenticatedShell>
-                <StudentDashboard
-                  complaints={complaints}
+                <StudentComplaintsPage
                   onOpenNewModal={() => setIsNewModalOpen(true)}
-                  onSelectComplaint={setSelectedComplaint}
                 />
+              </AuthenticatedShell>
+            </ProtectedRoute>
+          }
+        />
+        <Route
+          path="/student/complaints/:id"
+          element={
+            <ProtectedRoute allowedRoles={['STUDENT']}>
+              <AuthenticatedShell>
+                <StudentComplaintDetailPage />
               </AuthenticatedShell>
             </ProtectedRoute>
           }

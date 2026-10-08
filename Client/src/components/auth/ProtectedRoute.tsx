@@ -12,7 +12,7 @@ interface ProtectedRouteProps {
 export const getRoleDashboardPath = (role?: UserRole): string => {
   switch (role) {
     case 'STUDENT':
-      return '/student/dashboard';
+      return '/student/complaints';
     case 'HOSTEL_OFFICE':
       return '/staff/dashboard';
     case 'ELECTRICIAN':

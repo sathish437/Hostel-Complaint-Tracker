@@ -35,14 +35,16 @@ export const Sidebar: React.FC<SidebarProps> = ({
   if (!currentUser) return null;
 
   const isAuto = settings.assignmentAutomationEnabled;
-  const isActive = (path: string) => location.pathname === path;
+  const isActive = (path: string) =>
+    location.pathname === path ||
+    (path === '/student/complaints' && location.pathname.startsWith('/student/complaints'));
 
   // Role-specific navigation items per Section 4 & 5
   const getNavLinks = () => {
     switch (currentUser.role) {
       case 'STUDENT':
         return [
-          { to: '/student/dashboard', label: 'Problem Status', icon: ClipboardText },
+          { to: '/student/complaints', label: 'My Complaints', icon: ClipboardText },
           { to: '/student/profile', label: 'Profile', icon: UserIcon },
         ];
       case 'ELECTRICIAN':
